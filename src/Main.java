@@ -2,14 +2,18 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        CatalogoLivros catalogoLivros = new CatalogoLivros();
+        catalogoLivros.adicionarLivro("Narnia", "J. Jamir", 2005);
+        catalogoLivros.adicionarLivro("Narnia", "J. Jamir", 2010);
+        catalogoLivros.adicionarLivro("O home da mascara de ferro", "J. Jamir", 2005);
+        catalogoLivros.adicionarLivro("sitanic", "Pedro shumor", 1989);
+        catalogoLivros.adicionarLivro("Star wors", "Estiver", 1945);
+        catalogoLivros.adicionarLivro("Pirata do Caribe", "Normando", 2001);
+        catalogoLivros.adicionarLivro("Matrix", "Neu", 1998);
+
+        System.out.println(catalogoLivros.pesquisarPorAutor("Normando"));
+        System.out.println(catalogoLivros.pesquisaPorIntervaloAnos(1945, 2010));
+        System.out.println(catalogoLivros.pesquisarPorTitulo("Narnia"));
     }
 }
