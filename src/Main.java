@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         CatalogoLivros catalogoLivros = new CatalogoLivros();
-        catalogoLivros.adicionarLivro("Narnia", "J. Jamir", 2005);
+        catalogoLivros.adicionarLivro("Narnia", "J. Jamir", 2006);
         catalogoLivros.adicionarLivro("Narnia", "J. Jamir", 2010);
         catalogoLivros.adicionarLivro("O home da mascara de ferro", "J. Jamir", 2005);
         catalogoLivros.adicionarLivro("sitanic", "Pedro shumor", 1989);
